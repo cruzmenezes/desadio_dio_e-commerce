@@ -1,0 +1,17 @@
+Objetivo do Projeto
+Refinar o modelo apresentado inicialmente, adicionando os seguintes pontos:
+
+Cliente PJ e PF
+
+Cada conta de cliente deve ser identificada como Pessoa Jurídica (PJ) ou Pessoa Física (PF).
+Uma conta não pode ter as duas informações ao mesmo tempo.
+É necessário diferenciar os dados específicos de cada tipo de cliente, como CNPJ para PJ e CPF para PF.
+Pagamento
+
+O sistema deve permitir o cadastro de mais de uma forma de pagamento por cliente.
+Exemplos de formas de pagamento: cartão de crédito, boleto, PIX, etc.
+Deve haver um relacionamento entre o cliente e as formas de pagamento cadastradas.
+Entrega
+
+Cada pedido deve ter um status de entrega para acompanhar o andamento, como "Em preparação", "Despachado", "Entregue", etc.
+Deve incluir também um código de rastreio associado à entrega para monitoramento do pedido.
