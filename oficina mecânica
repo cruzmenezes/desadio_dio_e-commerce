@@ -1,0 +1,65 @@
+Diagrama Conceitual: Oficina Mecânica
+Entidades, atributos e relacionamentos descritos:
+
+Entidade: Cliente
+
+Atributos:
+ID_Cliente (PK)
+Nome
+CPF
+Telefone
+Endereço
+Entidade: Veículo
+
+Atributos:
+ID_Veículo (PK)
+Placa
+Modelo
+Marca
+Ano
+Relacionamento com Cliente:
+Um cliente pode ter vários veículos (1:N).
+Entidade: Ordem_de_Serviço (OS)
+
+Atributos:
+ID_OS (PK)
+Data_Emissão
+Data_Conclusão
+Valor_Total
+Status
+Relacionamento com Veículo:
+Cada veículo pode gerar várias OS (1:N).
+Entidade: Serviço
+
+Atributos:
+ID_Serviço (PK)
+Descrição
+Valor_Mão_de_Obra
+Relacionamento com OS:
+Uma OS pode conter vários serviços (N:N).
+Entidade: Peça
+
+Atributos:
+ID_Peça (PK)
+Nome
+Valor
+Relacionamento com OS:
+Uma OS pode incluir várias peças (N:N).
+Entidade: Equipe
+
+Atributos:
+ID_Equipe (PK)
+Nome_Equipe
+Relacionamento com Mecânico:
+Uma equipe possui vários mecânicos (1:N).
+Relacionamento com OS:
+Uma equipe pode executar várias OS (1:N).
+Entidade: Mecânico
+
+Atributos:
+ID_Mecânico (PK)
+Nome
+Endereço
+Especialidade
+Relacionamento com Equipe:
+Um mecânico pertence a uma única equipe (N:1).
